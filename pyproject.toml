@@ -1,0 +1,27 @@
+[project]
+name = "final-task-1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Egor Farkov",email = "fef84@icloud.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "pandas-stubs (>=2.2.3.250308,<3.0.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "reviews (>=0.6.0,<0.7.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.linit.dependencies]
+flake8 = "^7.1.2"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+
