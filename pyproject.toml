@@ -12,7 +12,8 @@ dependencies = [
     "pandas-stubs (>=2.2.3.250308,<3.0.0.0)",
     "pandas (>=2.2.3,<3.0.0)",
     "reviews (>=0.6.0,<0.7.0)",
-    "pytest (>=8.3.5,<9.0.0)"
+    "pytest (>=8.3.5,<9.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)"
 ]
 
 
@@ -25,4 +26,19 @@ flake8 = "^7.1.2"
 mypy = "^1.15.0"
 black = "^25.1.0"
 isort = "^6.0.1"
+
+
+[tool.black]
+line-length = 119
+exclude = '.git'
+
+
+[tool.isort]
+line_length = 119
+
+
+[tool.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+exclude = 'venv'
 
